@@ -6,5 +6,9 @@
     void VECTOR##_ISR(void)
 
 
+#define ENABLE_INTERRUPTS_GLOBAL do{ __asm__("EI");}while(0)
+
+#define DISABLE_INTERRUPTS_GLOBAL do{ __asm__("DI");}while(0)
+
 
 
